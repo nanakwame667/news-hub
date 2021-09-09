@@ -1,0 +1,59 @@
+.main-footer{
+    margin-top: 80px;
+    width: 100%;
+    height: 100vh;
+}
+
+.subscribe-form{
+    font-family: raleway-eb;
+    padding-left: 15%;
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid rgb(122, 18, 159,0.15);
+}
+
+.subscribe-details{
+    display: flex;
+    flex-direction: row;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    background: #7A129F;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.email{
+    width: 700px;
+    height: 45px;
+    margin-right: 50px;
+    border: 1px solid rgb(122, 18, 159,0.2);
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 70%;
+}
+.social-icons ul{
+    display: flex;
+    list-style: none;
+}
+.copyright p{
+    font-family: raleway-m;
+    opacity: 0.7;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.social-icons li{
+    padding:5px;
+}

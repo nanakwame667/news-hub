@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import React from 'react';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
 import './App.css';
+import { EconomicContextProvider } from './EconomicContext';
+import {FashionContextProvider} from './FashionContext';
+import { NewsContextProvider } from './NewsContext';
+import {SportsContextProvider} from './SportsContext';
+import {TechContextProvider } from './TechContext';
+
+import EconomicsScreen from './screens/EconomicsScreen';
+import FashionScreen from './screens/FashionScreen';
+import HomeScreen from './screens/HomeScreen';
+import SportsScreen from './screens/SportsScreen';
+import TechScreen from './screens/TechScreen';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NewsContextProvider>
+    <TechContextProvider>
+    <EconomicContextProvider>
+    <SportsContextProvider>
+    <FashionContextProvider>
+      <Router>
+          <Switch>
+            <Route exact path="/" component={HomeScreen}/>
+            <Route path="/tech" component={TechScreen}/>
+            <Route path="/fashion" component={FashionScreen}/>
+            <Route path="/sports" component={SportsScreen}/>
+            <Route path="economics" component={EconomicsScreen}/>
+          </Switch>
+      </Router>
+    </FashionContextProvider>
+    </SportsContextProvider>
+    </EconomicContextProvider>
+    </TechContextProvider> 
+    </NewsContextProvider>
   );
 }
 

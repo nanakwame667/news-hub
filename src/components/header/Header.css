@@ -1,0 +1,33 @@
+.header{
+    height: 80px;
+    position: relative;
+    top: 0;
+    margin-top: 18px;
+    border-bottom: 0.5px solid rgba(243, 143, 143, 0.4);
+}
+.header ul{
+    margin-top: 15px;
+    display: flex;
+    list-style: none;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #7A129F;
+    position: relative;
+    left: 0;
+    margin-left: 39px;
+    padding-left: 20px;
+}
+
+#search{
+    background:url("../../assets/icons/Search.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    outline: none;
+    text-indent: 17px;
+}

@@ -1,0 +1,71 @@
+.categories{
+    width: 100%;
+    height: 100vh;
+}
+
+.cate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    font-family: raleway-eb;
+}
+.sub-cate{
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    font-family: raleway-eb;
+    font-size: 25px;
+    color: #430459;
+}
+.cate-1{
+    width: 600px;
+    height: 250px;
+    background: url("../../assets/images/andy-kelly-0E_vhMVqL9g-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    display: flex;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.cate-2{
+    width: 600px;
+    height: 250px;
+    background: url("../../assets/images/dom-hill-nimElTcTNyY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    margin-left: 5%;
+    border-radius: 12px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.cate-3{
+    width: 600px;
+    height: 250px;
+    background: url("../../assets/images/vince-fleming-aZVpxRydiJk-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.cate-4{
+    width: 600px;
+    height: 250px;
+    background: url("../../assets/images/kyle-glenn-nXt5HtLmlgE-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5%;
+    border-radius: 12px;
+    padding-left: 20px;
+    cursor: pointer;
+}
